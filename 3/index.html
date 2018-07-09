@@ -69,21 +69,29 @@
   </form>
 
   <script>
+  $(function() {
+    // 1
     $("h1").css("color", "red");
 
+    // 2
     $(".section-1").css("background-color", "yellow");
 
+    // 3
     counter = parseInt($(".counter").text()); // obtengo el valor con .text()
     $(".counter").text(counter + 10); // sobreescribo el valor con .text(*)
 
+    // 4
     $("#row-3").css("transition", "1s");
     $("#row-3").on("click", function () {
       $("#row-3").css("background-color", "grey");
     });
 
+    // 5
     $("section > h1").css("font-size", "2em");
 
+    // 6
     $("table tbody > tr:last-child").css("background-color", "red");
+  });
   </script>
 </body>
 
